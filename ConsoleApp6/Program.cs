@@ -148,6 +148,7 @@ namespace ConsoleApp6
             diagrama.ListarFormas();
 
             Console.WriteLine($"El area total del diagrama es: {diagrama.CalcularAreaTotal()}");
+            Console.WriteLine($"El perimetro total del diagrama es: {diagrama.CalcularPerimetroTotal()}");
             Console.WriteLine("Presione Enter para continuar...");
             Console.ReadLine();
         }

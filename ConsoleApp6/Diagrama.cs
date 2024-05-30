@@ -71,12 +71,21 @@ namespace ConsoleApp6
             }
             return areaTotal;
         }
+        public double CalcularPerimetroTotal()
+        {
+            double perimetroTotal = 0;
+            foreach (var forma in formas)
+            {
+                perimetroTotal += forma.Perimetro();
+            }
+            return perimetroTotal;
+        }
 
         public void ListarFormas()
         {
             foreach (var forma in formas)
             {
-                Console.WriteLine($"{forma.GetType().Name} - Area: {forma.Area()}");
+                Console.WriteLine($"{forma.GetType().Name} - Area: {forma.Area()}  -Perimetro: {forma.Perimetro()}");
             }
         }
     }
